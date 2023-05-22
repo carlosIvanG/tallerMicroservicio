@@ -7,6 +7,7 @@ import lombok.Data;
 public class HorarioAsesoria implements Serializable {
 	private String fecha;
 	private String hora;
+	private int usuarioId;
 	
 	public HorarioAsesoria() {
 		super();

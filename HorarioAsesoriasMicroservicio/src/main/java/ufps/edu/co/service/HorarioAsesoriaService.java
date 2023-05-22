@@ -26,6 +26,6 @@ public class HorarioAsesoriaService {
 	}
 	//buscar todos los horarios de un usuario en particular//
 	public List<HorarioAsesoria> obtenerUsuarioId (int usuarioId){
-		return horarioasesoriaDao.listarUsuarioId(usuarioId);
+		return horarioasesoriaDao.findByUsuarioId(usuarioId);
 	}
 }

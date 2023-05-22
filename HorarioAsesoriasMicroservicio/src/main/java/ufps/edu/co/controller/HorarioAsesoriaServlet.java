@@ -14,7 +14,7 @@ import ufps.edu.co.entity.HorarioAsesoria;
 import ufps.edu.co.service.HorarioAsesoriaService;
 
 @RestController
-@RequestMapping("/Horario")
+@RequestMapping("/horario")
 public class HorarioAsesoriaServlet {
 	@Autowired
 	private HorarioAsesoriaService  horarioAsesoriaService;
@@ -44,7 +44,7 @@ public class HorarioAsesoriaServlet {
 	}
 	
 	@GetMapping("/usuario/{usuarioId}")
-	public ResponseEntity<List<HorarioAsesoria>> listarhorarioUsuarioId(@PathVariable("id") int id){
+	public ResponseEntity<List<HorarioAsesoria>> listarhorarioUsuarioId(@PathVariable("usuarioId") int id){
 		List<HorarioAsesoria> horarios = horarioAsesoriaService.obtenerUsuarioId(id);
 		if(horarios.isEmpty()){
 			return ResponseEntity.noContent().build();

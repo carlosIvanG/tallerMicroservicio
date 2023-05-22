@@ -16,7 +16,7 @@ import ufps.edu.co.service.UsuarioService;
 
 
 @RestController
-@RequestMapping("/Usuario")
+@RequestMapping("/usuario")
 public class UsuarioServlet {
 	@Autowired
 	private UsuarioService usuarioService;

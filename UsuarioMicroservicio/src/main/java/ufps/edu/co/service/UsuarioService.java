@@ -20,7 +20,7 @@ public class UsuarioService {
 	private UsuarioDao usuarioDao;
 
 	public List<HorarioAsesoria> getHorarios(int usuarioId){
-		 List<HorarioAsesoria> horarios = restTemplate.getForObject("http://localhost:8082/horario/usuario/" + usuarioId, List.class);
+		 List<HorarioAsesoria> horarios = restTemplate.getForObject("http://localhost:8002/horario/usuario/" + usuarioId, List.class);
 		 return horarios;
 	}
 	
